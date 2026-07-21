@@ -1,0 +1,25 @@
+:root {
+  /* Source-sampled from the supplied/courtesy SupplyHouse wordmark asset. */
+  --sh-ink: #331610;
+  --sh-brown: #5f3423;
+  --sh-copper: #b7824f;
+  --sh-sand: #e7d3bd;
+  /* Candidate-original supporting colors, subordinate to the employer palette. */
+  --ai-blue: #24506b;
+  --ai-blue-deep: #173647;
+  --ai-mint: #b7d3cb;
+  --success: #2f6b51;
+  --hold: #9a4b2e;
+  --paper: #ffffff;
+  --paper-warm: #fbf8f4;
+  --paper-tint: #f3ede6;
+  --text: #241d1a;
+  --muted: #6e625c;
+  --line: #d9cec4;
+  --line-strong: #bba99b;
+  --focus: #24506b;
+  --shadow: 0 18px 50px rgba(51, 22, 16, .12);
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 26px;
+}
