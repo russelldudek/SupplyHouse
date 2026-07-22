@@ -1,25 +1,23 @@
 :root {
-  /* Source-sampled from the supplied/courtesy SupplyHouse wordmark asset. */
-  --sh-ink: #331610;
-  --sh-brown: #5f3423;
-  --sh-copper: #b7824f;
-  --sh-sand: #e7d3bd;
-  /* Candidate-original supporting colors, subordinate to the employer palette. */
-  --ai-blue: #24506b;
-  --ai-blue-deep: #173647;
-  --ai-mint: #b7d3cb;
-  --success: #2f6b51;
-  --hold: #9a4b2e;
-  --paper: #ffffff;
-  --paper-warm: #fbf8f4;
-  --paper-tint: #f3ede6;
-  --text: #241d1a;
-  --muted: #6e625c;
-  --line: #d9cec4;
-  --line-strong: #bba99b;
-  --focus: #24506b;
-  --shadow: 0 18px 50px rgba(51, 22, 16, .12);
+  /* Source-sampled from the SupplyHouse wordmark and public commerce UI. */
+  --sh-ink: #2f1711;
+  --sh-brown: #5d3324;
+  --sh-copper: #b77a42;
+  --sh-orange: #ea7a24;
+  --sh-blue: #2d728f;
+  --sh-blue-deep: #16495e;
+  --sh-cream: #f5efe7;
+  --sh-paper: #fffdf9;
+  --sh-line: #d8cbc0;
+  --sh-muted: #74675f;
+  /* Candidate-original role accents, subordinate to the employer palette. */
+  --fit-green: #3e7d63;
+  --fit-yellow: #d6a83b;
+  --fit-red: #a65039;
+  --fit-grid: rgba(47, 23, 17, .065);
+  --shadow-soft: 0 22px 70px rgba(47, 23, 17, .12);
+  --shadow-tight: 0 12px 28px rgba(47, 23, 17, .12);
   --radius-sm: 8px;
   --radius-md: 16px;
-  --radius-lg: 26px;
+  --radius-lg: 28px;
 }

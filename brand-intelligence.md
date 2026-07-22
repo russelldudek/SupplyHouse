@@ -1,54 +1,65 @@
-# Brand Intelligence
+# SupplyHouse Brand Intelligence
 
-## Campaign identity
+## Official company sources
 
-Independent candidate vision by Russell Dudek for SupplyHouse Director of Enterprise AI Adoption. The work is not affiliated with or endorsed by SupplyHouse.
+- Company and commerce experience: https://www.supplyhouse.com/
+- Careers and current role language: https://www.supplyhouse.com/careers
+- Company/culture information: https://www.supplyhouse.com/our-company
+- Current job posting: https://job-boards.greenhouse.io/supplyhouse/jobs/5995305004
+- Supply-chain modernization case study: https://www.relexsolutions.com/resources/case-supplyhouse/
+- Strategic partnership announcement: https://www.prnewswire.com/news-releases/supplyhouse-receives-strategic-investment-from-kkr-302507141.html
 
-## Authoritative company sources
+## Identity assets
 
-- SupplyHouse Our Company: https://www.supplyhouse.com/our-company
-- SupplyHouse Core Values: https://www.supplyhouse.com/core-values
-- SupplyHouse Careers and role listing: https://www.supplyhouse.com/careers
-- SupplyHouse / KKR announcement: https://www.prnewswire.com/news-releases/supplyhouse-receives-strategic-investment-from-kkr-302507141.html
-- RELEX SupplyHouse case study: https://www.relexsolutions.com/resources/case-supplyhouse/
+- Visible company identity: SupplyHouse.com wordmark.
+- Local web asset: `assets/brand/supplyhouse-logo.png`.
+- Preserved source image: `assets/brand/supplyhouse-logo-source.webp`.
+- Source/provenance: high-resolution SupplyHouse.com wordmark distributed with SupplyHouse press coverage through ACHR News after the official site image endpoint was not retrievable in the build environment.
+- Use: nominative identification of the target employer only. The mark remains unmodified, proportionally contained and paired with an independent-candidate qualifier.
 
-## Logo provenance and use
+## Color token provenance
 
-The public SupplyHouse website exposes its header mark to search/rendering tools as a non-retrievable logical endpoint (`/header-logo-image`). Direct network retrieval from the build environment was unavailable. A high-resolution wordmark image credited as "Courtesy of SupplyHouse" was retrieved from ACHR News' report on the SupplyHouse/RELEX implementation:
+Source-sampled from the locally committed SupplyHouse wordmark and public SupplyHouse commerce/careers interface:
 
-https://www.achrnews.com/ext/resources/2024/08-August/SupplyHousecom-Logo.webp
+- `--sh-ink: #2f1711`
+- `--sh-brown: #5d3324`
+- `--sh-copper: #b77a42`
+- `--sh-orange: #ea7a24`
+- `--sh-blue: #2d728f`
+- `--sh-blue-deep: #16495e`
+- `--sh-cream: #f5efe7`
+- `--sh-paper: #fffdf9`
 
-`assets/brand/supplyhouse-logo-source.webp` preserves that source. `assets/brand/supplyhouse-logo.png` is a whitespace-trimmed, proportion-preserving derivative with no recoloring, tracing, redrawing, animation or logo modification. It is used only for nominative identification of the target employer.
+Candidate-original role-state colors, subordinate to the employer-recognition layer:
 
-## Color tokens
-
-Colors were sampled from the retrieved SupplyHouse wordmark:
-
-- `--sh-ink: #331610` - dominant wordmark brown
-- `--sh-brown: #5f3423` - middle swoosh brown
-- `--sh-copper: #b7824f` - light swoosh / tan accent
-- `--sh-sand: #e7d3bd` - derived pale support tint
-
-Candidate-original supporting colors are explicitly subordinate:
-
-- `--ai-blue: #24506b` - trustworthy information / governance accent
-- `--ai-mint: #b7d3cb` - learning-return and evidence accent
+- fit / commission: `#3e7d63`
+- discovery / hold: `#d6a83b`
+- repair / stop attention: `#a65039`
 
 ## Typography decision
 
-The public site presents a direct, utilitarian sans-serif character. The build uses the open, locally available Lato family with Noto Sans and Arial fallbacks. No proprietary font files are copied or committed.
+SupplyHouse's public experience uses a friendly, clear, service-oriented sans-serif character with bold merchandising and commerce hierarchy. This campaign uses Lato when available, followed by Noto Sans and Arial, without copying or committing proprietary font files. The implementation reproduces the observed character through strong weight contrast, compact utility labels, open body copy and direct editorial hierarchy.
 
-## Visual metaphor
+## Photography, product and interface cues
 
-The AI Adoption Manifold is candidate-original and derived from SupplyHouse's plumbing/HVAC domain and the role's work. A manifold distributes shared capacity through locally controlled circuits. The campaign maps that mechanic to enterprise AI: shared standards, business-owned workflows, explicit human authority, enablement and evidence returned to the enterprise.
+The public brand combines real people/service language, dense product-category commerce, practical parts expertise, warehouse/logistics imagery, warm brown identity, blue utility actions and straightforward customer guidance. No third-party photography is shipped. The campaign translates those cues into an original exploded technical assembly and fitment-review grammar derived from the work of matching the right component to the right job.
 
-## Imagery and assets
+## Original visual system
 
-No company photography, product photography or interface screenshots are used. The site relies on the official/courtesy wordmark and original code-native diagrams. This avoids generic stock imagery and avoids implying access to internal systems.
+- Signature scene: five Fit-to-Work conditions assemble once into a bounded-pilot decision.
+- Role artifact: AI Fit-to-Work Standard and one-page review worksheet.
+- Geometry: technical assembly, dimension lines, parts-fit spacing, restrained utility rails and open editorial bands.
+- Motion: one-shot assembly with a stable final state; no perpetual loop.
+- Interaction: four illustrative SupplyHouse-relevant workflows atomically update the job, context, AI role, human authority, proof, owner, enablement, scale condition and disposition.
+- Mobile equivalent: a sequential semantic parts list rather than a squeezed desktop SVG.
 
-## Usage constraints
+## Artifact application
 
-- The SupplyHouse mark is unmodified and used only for target-employer identification.
-- The independent-candidate qualifier remains visible.
-- No page imitates an official SupplyHouse portal, letterhead or corporate navigation.
-- Public facts are labeled as public evidence or hypotheses; undisclosed internal state is never asserted.
+- Website: full employer-recognition palette, official wordmark, assembly system and interactive fit review.
+- Resume and cover letter: conservative white document with brown rule, blue role line, compact identity and full candidate-vision URL.
+- Candidate thesis and 120-day plan: restrained diagrams, tables and decision furniture using the same fit/installation grammar.
+- AI Fit-to-Work Review: one-page landscape worksheet for an interview working session.
+
+## Independent-candidate distinction
+
+Every recruiter-facing surface identifies the work as an independent candidate vision by Russell Dudek. Nothing is presented as an official SupplyHouse publication or internal assessment.

@@ -1,38 +1,32 @@
-# SupplyHouse Director of Enterprise AI Adoption - Independent Candidate Vision
+# SupplyHouse Director of Enterprise AI Adoption — Independent Candidate Vision
 
 A role-specific candidate campaign by Russell Dudek.
 
 ## Thesis
 
-Make AI useful enough to trust - and trusted enough to scale.
+**Fit AI to the work. Bring the people with it.**
+
+The campaign argues that SupplyHouse can turn point AI successes into repeatable enterprise capability by treating adoption as a fit-and-install discipline: start with a valuable workflow, define trusted context, bound the AI role, make human authority explicit, prove the result, and package learning for reuse.
 
 ## Public routes
 
-- `index.html` - candidate vision and interactive AI Adoption Manifold
-- `resume.html` - two-page role-aligned resume
-- `cover-letter.html` - one-page cover letter
-- `interview-brief.html` - three-page candidate thesis brief
-- `120-day-plan.html` - four-page entry plan
-- `commissioning-review.html` - two-page AI workflow commissioning review
+- `index.html` — candidate vision and interactive AI Fit-to-Work Standard
+- `resume.html` — exactly two-page role-aligned resume
+- `cover-letter.html` — exactly one-page cover letter
+- `interview-brief.html` — candidate thesis brief
+- `120-day-plan.html` — entry plan
+- `ai-fit-review.html` — one-page working-session worksheet
 
-Each printable route includes a native same-origin PDF download.
+Every printable route includes a native same-origin PDF download.
 
 ## Job posting
 
 https://job-boards.greenhouse.io/supplyhouse/jobs/5995305004
 
-## Validation
-
-The campaign passed 156 static checks, exact PDF pagination, full-page PDF review, keyboard and touch interaction, reduced-motion behavior, and responsive Chromium checks at 1440, 1280, 768, 390 and 320 pixels. See `campaign-audit.md`.
-
-## Publication status
-
-The complete public campaign is committed to the `main` branch of `russelldudek/SupplyHouse`. GitHub Pages activation and live-route verification are tracked separately from source publication.
-
 ## Brand and evidence
 
-See `brand-intelligence.md` and `campaign-audit.md`.
+See `brand-intelligence.md` and `campaign-audit.md`. The company logo is used only for nominative identification, remains unmodified, and is paired with independent-candidate language.
 
-## Independence and AI disclosure
+## AI disclosure
 
-This is an independent candidate work product and is not affiliated with or endorsed by SupplyHouse. AI tools assisted research, layout and production; Russell Dudek owns the strategy, evidence choices and interview judgment.
+AI tools assisted public research, layout and production. Russell Dudek owns the strategy, evidence choices, operating model and interview judgment.
