@@ -36,7 +36,7 @@ jobs:
               > .readability/readability.part.02
           test "$(git hash-object .readability/readability.part.00)" = "b868af40cc91e26096012d59cceb798dc3a67afc"
           test "$(git hash-object .readability/readability.part.02)" = "0246137cc46dada35ae6234989fc020df17df7c8"
-          printf '\n# verified payload retrigger\n' >> .github/workflows/readability-build.yml
+          printf '\n# verified payload retrigger 2\n' >> .github/workflows/readability-build.yml
 
       - name: Push verified payload to repair branch
         run: |
