@@ -1,0 +1,91 @@
+name: Verify live candidate vision
+
+on:
+  workflow_run:
+    workflows: ["Deploy candidate vision"]
+    types: [completed]
+
+permissions:
+  contents: read
+  statuses: write
+
+jobs:
+  verify:
+    if: github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    env:
+      SOURCE_SHA: ${{ github.event.workflow_run.head_sha }}
+      BASE_URL: https://russelldudek.github.io/SupplyHouse
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - name: Mark verification pending
+        run: |
+          gh api --method POST \
+            -H "Accept: application/vnd.github+json" \
+            "/repos/${{ github.repository }}/statuses/${SOURCE_SHA}" \
+            -f state=pending \
+            -f context='candidate-vision/live' \
+            -f description='Checking deployed routes and downloads'
+
+      - name: Verify live routes and documents
+        id: verify
+        shell: bash
+        run: |
+          set -euo pipefail
+          landing=''
+          for attempt in $(seq 1 60); do
+            if landing=$(curl -fsSL --retry 2 --retry-delay 2 "${BASE_URL}/?source=${SOURCE_SHA}"); then
+              if grep -Fq 'Fit AI to the work' <<<"${landing}" && grep -Fq 'AI Fit-to-Work Standard' <<<"${landing}"; then
+                break
+              fi
+            fi
+            if [ "${attempt}" -eq 60 ]; then
+              echo 'Corrected landing page did not become available.' >&2
+              exit 1
+            fi
+            sleep 5
+          done
+
+          routes=(
+            resume.html
+            cover-letter.html
+            interview-brief.html
+            120-day-plan.html
+            ai-fit-review.html
+          )
+          for route in "${routes[@]}"; do
+            curl -fsSL "${BASE_URL}/${route}?source=${SOURCE_SHA}" >/tmp/route
+            test -s /tmp/route
+          done
+
+          pdfs=(
+            Russell-Dudek-SupplyHouse-Resume.pdf
+            Russell-Dudek-SupplyHouse-Cover-Letter.pdf
+            Russell-Dudek-SupplyHouse-Candidate-Thesis-Brief.pdf
+            Russell-Dudek-SupplyHouse-120-Day-Plan.pdf
+            Russell-Dudek-SupplyHouse-AI-Fit-to-Work-Review.pdf
+          )
+          for pdf in "${pdfs[@]}"; do
+            curl -fsSL "${BASE_URL}/docs/${pdf}?source=${SOURCE_SHA}" -o /tmp/document.pdf
+            test "$(head -c 5 /tmp/document.pdf)" = '%PDF-'
+          done
+
+      - name: Mark verification successful
+        if: success()
+        run: |
+          gh api --method POST \
+            -H "Accept: application/vnd.github+json" \
+            "/repos/${{ github.repository }}/statuses/${SOURCE_SHA}" \
+            -f state=success \
+            -f context='candidate-vision/live' \
+            -f description='Live routes and five PDF downloads verified'
+
+      - name: Mark verification failed
+        if: failure()
+        run: |
+          gh api --method POST \
+            -H "Accept: application/vnd.github+json" \
+            "/repos/${{ github.repository }}/statuses/${SOURCE_SHA}" \
+            -f state=failure \
+            -f context='candidate-vision/live' \
+            -f description='Live candidate vision verification failed'
