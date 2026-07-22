@@ -13,11 +13,11 @@ The campaign argues that SupplyHouse can turn point AI successes into repeatable
 - `index.html` — candidate vision and interactive AI Fit-to-Work Standard
 - `resume.html` — exactly two-page role-aligned resume
 - `cover-letter.html` — exactly one-page cover letter
-- `interview-brief.html` — candidate thesis brief
-- `120-day-plan.html` — entry plan
+- `interview-brief.html` — four-page candidate thesis brief
+- `120-day-plan.html` — four-page entry plan
 - `ai-fit-review.html` — one-page working-session worksheet
 
-Every printable route includes a native same-origin PDF download.
+Every printable route includes a native same-origin PDF download. Document typography and page composition are tuned for professional reading size, and the responsive evidence layout preserves separation between company labels and supporting detail.
 
 ## Job posting
 
