@@ -50,10 +50,21 @@ The final release record must state the exact audited main SHA and the supported
 - Horizontal overflow: zero across the matrix and all document routes.
 - Interaction: four complete scenario states, atomic rapid-selection settlement, keyboard navigation, reset, mobile menu and reduced-motion semantic resolution passed.
 - Hero motion: an observable intermediate assembly frame and a stable settled state passed.
-- PDFs: exact 2 / 1 / 3 / 3 / 1 page contracts; Letter geometry; one landscape worksheet; no clipping or broken glyphs in rendered full-page inspection.
+- PDFs: exact 2 / 1 / 4 / 4 / 1 page contracts; Letter geometry; one landscape worksheet; no clipping or broken glyphs in rendered full-page inspection.
 - Candidate-facing confidential-name scan: zero matches.
 - Unsupported cloud-platform claims, superseded URL and rejected visual language: zero matches.
 
 ## Deployment
 
 A GitHub Pages workflow is included to publish the static candidate vision from `main`. The public destination is `https://russelldudek.github.io/SupplyHouse/`.
+
+
+## Readability and rendered-geometry correction — 2026-07-22
+
+- User-observed defect: the fixed 130px evidence-name track allowed `Compunetics` to collide with the adjacent descriptor at tablet widths.
+- Root cause: whole-page overflow checks did not measure rendered text-range separation inside the grid.
+- Approved correction: a flexible 180px minimum evidence-name track plus a shrink-safe details track.
+- Document readability: resume body type is 10.5pt, cover-letter body type is approximately 10.1pt, and supporting-document body type is approximately 9.75pt; mobile document previews use 11.25pt or larger.
+- Page-use correction: the candidate thesis brief and 120-day plan were recomposed to four pages rather than forcing larger type into clipped three-page canvases.
+- Worksheet correction: the landscape Fit-to-Work Review uses compact writing fields and decision cells so the complete disposition section remains above the footer.
+- Regression coverage: evidence sibling gap, minimum rendered type, exact 2 / 1 / 4 / 4 / 1 pagination, content/footer clearance, screen reflow, rasterized full-page inspection and live downloads are release-blocking.

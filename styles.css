@@ -401,3 +401,194 @@ button { font: inherit; }
   .hero-visual { min-height: 700px; padding-top: 48px; padding-bottom: 42px; }
 }
 .hero-assembly .leader { fill: none; }
+
+/* Readability and rendered-geometry correction — 2026-07-22 */
+.evidence-item {
+  grid-template-columns: minmax(180px, .44fr) minmax(0, 1fr);
+}
+.evidence-item strong {
+  line-height: 1.05;
+  overflow-wrap: anywhere;
+}
+
+/* Professional document type: CSS px convert to 0.75 print points. */
+.document-body .print-page {
+  padding: .45in .52in .42in;
+}
+.document-body .doc-footer {
+  left: .52in;
+  right: .52in;
+}
+.document-body .doc-title {
+  padding: 14px 0 10px;
+}
+.document-body .doc-section {
+  margin-top: 12px;
+}
+.document-body .doc-section h3 {
+  margin-bottom: 5px;
+  font-size: 12.2px;
+}
+.document-body .doc-section h4 {
+  font-size: 12.5px;
+}
+.document-body .doc-section p,
+.document-body .doc-section li,
+.document-body .doc-section td,
+.document-body .doc-section th {
+  font-size: 13px;
+  line-height: 1.35;
+}
+.document-body .doc-section p { margin-bottom: 6px; }
+.document-body .doc-section li { margin-bottom: 2px; }
+.document-body .doc-card { padding: 8px 9px; }
+.document-body .doc-table th,
+.document-body .doc-table td { padding: 5px 6px; }
+.document-body .doc-highlight { font-size: 12.6px; line-height: 1.36; }
+.document-body .decision-cell { min-height: .62in; padding: 7px; }
+.document-body .decision-cell strong { font-size: 11.4px; }
+.document-body .decision-cell span { font-size: 10.8px; }
+
+.resume-document .doc-section p,
+.resume-document .doc-section li,
+.resume-document .doc-section td,
+.resume-document .doc-section th {
+  font-size: 13.8px;
+  line-height: 1.35;
+}
+.resume-document .doc-role { margin-top: 9px; }
+.resume-document .doc-role h4 { font-size: 13.2px; }
+.resume-document .doc-role .meta { font-size: 10.6px; }
+.resume-document .doc-chip { font-size: 10.5px; }
+
+.cover-document .cover-page .doc-section p {
+  font-size: 13.5px;
+  line-height: 1.42;
+  margin-bottom: 7px;
+}
+.cover-document .cover-page .doc-title {
+  padding: 14px 0 10px;
+}
+
+.brief-document .doc-card,
+.plan-document .doc-card { break-inside: avoid; }
+
+.review-document .print-page.landscape {
+  padding: .32in .48in .34in;
+}
+.review-document .doc-title {
+  padding: 10px 0 7px;
+}
+.review-document .doc-section {
+  margin-top: 7px;
+}
+.review-document .doc-section p,
+.review-document .doc-section li,
+.review-document .doc-section td,
+.review-document .doc-section th {
+  font-size: 12.5px;
+  line-height: 1.3;
+}
+.review-document .doc-four-col { gap: 8px; }
+.review-document .doc-card { padding: 7px 8px; }
+.review-document .fit-review-grid { gap: 7px; }
+.review-document .fit-review-box {
+  min-height: 1.10in;
+  padding: 7px 8px;
+}
+.review-document .fit-review-box h3 {
+  margin-bottom: 4px;
+  font-size: 10.8px;
+}
+.review-document .write-line { height: 11px; }
+.review-document .decision-bar { gap: 6px; margin-top: 6px; }
+.review-document .decision-cell { min-height: .50in; padding: 6px 7px; }
+.review-document .doc-footer {
+  left: .48in;
+  right: .48in;
+  bottom: .16in;
+}
+
+@media screen and (max-width: 900px) {
+  .document-body .doc-section p,
+  .document-body .doc-section li,
+  .document-body .doc-section td,
+  .document-body .doc-section th {
+    font-size: 15px;
+    line-height: 1.48;
+  }
+  .document-body .doc-section h3 { font-size: 13px; }
+  .document-body .doc-section h4 { font-size: 15px; }
+  .cover-document .cover-page .doc-section p { font-size: 16px; }
+}
+.review-document .fit-review-box { min-height: 1.06in; }
+.review-document .write-line { height: 10px; }
+.review-document .decision-cell { min-height: .46in; }
+.plan-document .doc-section { margin-top: 11px; }
+.review-document .fit-review-box { min-height: 1.02in; }
+.review-document .write-line { height: 9px; }
+.review-document .doc-section p,
+.review-document .doc-section li,
+.review-document .doc-section td,
+.review-document .doc-section th { font-size: 13px; line-height: 1.28; }
+.resume-document .doc-section p,
+.resume-document .doc-section li,
+.resume-document .doc-section td,
+.resume-document .doc-section th { font-size: 13.7px; }
+
+/* Final screen reflow overrides follow print-specific rules by design. */
+@media screen and (max-width: 900px) {
+  .document-body .print-page,
+  .document-body .print-page.landscape {
+    width: 100%;
+    min-height: 0;
+    margin: 0;
+    padding: 28px 22px 64px;
+    box-shadow: none;
+    border-bottom: 18px solid #eee9e3;
+  }
+  .document-body .doc-footer {
+    position: static;
+    margin-top: 18px;
+  }
+  .resume-document .doc-section p,
+  .resume-document .doc-section li,
+  .resume-document .doc-section td,
+  .resume-document .doc-section th,
+  .review-document .doc-section p,
+  .review-document .doc-section li,
+  .review-document .doc-section td,
+  .review-document .doc-section th {
+    font-size: 15px;
+    line-height: 1.48;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .evidence-item {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 8px;
+  }
+  .evidence-item > div,
+  .evidence-item p,
+  .evidence-item span {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+  .document-body a,
+  .document-body .doc-contact,
+  .document-body .doc-continuation span,
+  .document-body .doc-footer span {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+  .document-body .doc-table {
+    width: 100%;
+    table-layout: fixed;
+  }
+  .document-body .doc-table th,
+  .document-body .doc-table td {
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+}
